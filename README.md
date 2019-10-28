@@ -1,2 +1,2 @@
-# Opensource-For-You-Me
-Make the world beautiful by Contribute to Opensource &lt;3 
+# Opensource For You & Me :heart:
+Make the world beautiful by Contribute to Opensource :yellow_heart:
