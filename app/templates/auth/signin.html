@@ -1,4 +1,19 @@
-{% macro render_field(field, placeholder=None) %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+   </head>
+  <body><header>
+    <div class="container">
+      <h1 class="logo">OpenSource For You & Me</h1>
+      <strong><nav>
+        <ul class="menu">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+        </ul>
+      </nav></strong>
+    </div>
+  </header>
+  {% macro render_field(field, placeholder=None) %}
 {% if field.errors %}
 <div>
 {% elif field.flags.error %}
@@ -49,3 +64,6 @@
   </div>
 </div>
 
+
+  </body>
+</html>

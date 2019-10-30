@@ -1,1 +1,24 @@
-<h1>Platform is under construction </h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">OpenSource For You & Me</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('auth.signin') }}">Login</a></li>
+            <li><a href="{{ url_for('auth.signup') }}">Signup</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
